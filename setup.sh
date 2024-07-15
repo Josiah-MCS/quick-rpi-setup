@@ -6,9 +6,15 @@ function update_and_upgrade() {
 }
 
 function install_packages() {
-    sudo apt install -y git ninja-build gettext cmake unzip curl tmux xsel xclip fd-find ripgrep
+    sudo apt install -y git ninja-build gettext cmake unzip curl tmux xsel xclip fd-find ripgrep vim
+		# fzf
 		git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 		~/.fzf/install --all
+		# nvm
+		curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+		source ~/.bashrc
+		# Node.js
+		nvm install 20
 }
 
 function setup_neovim() {
