@@ -29,7 +29,7 @@ function setup_neovim() {
 function clone_configs() {
     git clone https://github.com/Josiah-tan/vimconfig.git ~/.vim
     git clone https://github.com/Josiah-tan/nvimconfig.git ~/.config/nvim
-    git clone https://github.com/Josiah-MCS/quick-projects-nvim-template.git ~/.config/.quick_projects
+    git clone https://github.com/Josiah-tan/quick-projects-nvim-template.git ~/.config/.quick_projects
     curl -o ~/.tmux.conf https://raw.githubusercontent.com/Josiah-tan/.dotfiles/main/tmux/.tmux.conf?token=GHSAT0AAAAAACPXAEXPBENFTV5PZBI53Z4SZUUWXOQ
 }
 
