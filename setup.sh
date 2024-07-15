@@ -7,6 +7,8 @@ function update_and_upgrade() {
 
 function install_packages() {
     sudo apt install -y git ninja-build gettext cmake unzip curl tmux xsel xclip fd-find ripgrep
+		git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+		~/.fzf/install --all
 }
 
 function setup_neovim() {
